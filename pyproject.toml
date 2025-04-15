@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "md_convertor"
-version = "1.1.0"
+version = "0.1.0"
 description = "Convert markdown file to html or pdf format"
 readme = "README.md"
 authors = [{ name = "Pengfei", email = "liu.pengfei@hotmail.fr" }]
@@ -15,7 +15,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 keywords = ["markdown", "html", "pdf", "convertor"]
-dependencies = ["weasyprint", ]
+dependencies = ["weasyprint", "markdown","click","pygments" ]
 requires-python = ">=3.9"
 
     [project.optional-dependencies]
@@ -23,11 +23,11 @@ requires-python = ">=3.9"
     dev = ["black", "bumpver", "isort", "mypy", "pytest"]
 
     [project.scripts]
-    stock_catcher = "md_convertor.__main__:main"
+    md_convertor = "md_convertor.__main__:main"
 
     [project.urls]
-    repository    = "https://github.com/pengfei99/py-packaging"
-    documentation = "https://github.com/pengfei99/py-packaging/blob/main/docs/packaging_python_scripts.md"
+    repository    = "https://github.com/pengfei99/MarkdownConvertor"
+    documentation = "https://github.com/pengfei99/MarkdownConvertor#"
 
 
 [tool.bumpver]
