@@ -1,6 +1,7 @@
 # Introduction of sas file
 
 In SAS, the **.sas7bdat** file is a `binary data file` that stores datasets, and their metadata such as:
+
 - variable (column) names
 - types
 - formats
@@ -57,6 +58,7 @@ print(meta.column_measure_levels)  # often used as a proxy
 ## 1. Column Type
 
 `Column Type` defines how SAS internally stores the data in a column. In sas, a column can only have two possible types:
+
 - Numeric (Num) :  is used for storing numeric data, including **integers, real numbers, and dates**
                            (since SAS stores dates as numeric values, representing the number of days `since January 1, 1960`).
                      The value is stored as `8-byte` floating-point numbers
@@ -78,6 +80,7 @@ print(meta.column_measure_levels)  # often used as a proxy
 
 The **column format** controls how the data is displayed when output or printed. Below are some of the most 
 commonly used SAS formats:
+
 - General Numeric formats
 - Currency Formats
 - Character formats
@@ -124,6 +127,7 @@ commonly used SAS formats:
 
 The raw data are stored as numeric values. The format will convert them to human-readable value. We can 
 divide them into three main categories:
+
 - Datetime: Represents dates and times as the number of seconds since midnight on `January 1 1960`
 - Date: Represents dates as the number of days since `January 1, 1960`. 
 - Time: Represents the time of day as the number of seconds since midnight.
